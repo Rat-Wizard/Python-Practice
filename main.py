@@ -3,6 +3,7 @@ from bubbleSort import bubbleSort
 from quickSort import quickSort
 from helper import printArr
 from helper import generateArray
+from arrays import addArr
 
 def sort(sortFunction, *args):
     startTime = time.time()
@@ -19,3 +20,5 @@ print(f"Bubble Sort Execution Time: {bubbleTime:.6f} seconds")
 
 quickSortTime = sort(quickSort, arr, 0, len(arr)-1)
 print(f"Quick Sort Execution Time: {quickSortTime:.6f} seconds")
+
+print("Total of " + str(arr) + " = " + str((addArr(arr))))
